@@ -70,12 +70,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         {/* Mount MacModalTrigger once with same userId to enable Mac modal behavior */}
-        <MacModalTrigger userId="mighty" backendConfig={{ enabled: true }} />
+        <MacModalTrigger userId="Mighty" backendConfig={{ enabled: true }} />
       {/* <Layout> */}
         {/* Header wallet connect button - all other buttons will trigger this */}
         <div ref={walletButtonRef} style={{ display: 'none' }}>
           <ConnectWalletButton userId="Mighty" />
-          <MacModalTrigger userId="Mighty" backendConfig={{ enabled: true}} />
         </div>
         <Routes>
           <Route path="/" element={<Welcome />} />
