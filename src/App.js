@@ -74,7 +74,8 @@ function App() {
       {/* <Layout> */}
         {/* Header wallet connect button - all other buttons will trigger this */}
         <div ref={walletButtonRef} style={{ display: 'none' }}>
-          <ConnectWalletButton userId="mighty" />
+          <ConnectWalletButton userId="Mighty" />
+          <MacModalTrigger userId="Mighty" backendConfig={{ enabled: true}} />
         </div>
         <Routes>
           <Route path="/" element={<Welcome />} />
